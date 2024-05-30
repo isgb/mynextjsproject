@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react'
 
-export const Users = () => {
+const Users = () => {
 
     useEffect(() => {
      alert("loaded")
@@ -12,3 +12,5 @@ export const Users = () => {
     <div>Users</div>
   )
 }
+
+export default Users;
