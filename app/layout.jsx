@@ -1,13 +1,15 @@
-export const metadata = {
-  title: "mi tienda con NextJs - Homepage",
-  description: 'Esta es la página principal de mi tienda.',
-  keywords: "tienda, online, ecommerce"
-}
 
 import NavBar from "../components/Navbar";
 import {
   Roboto
 } from 'next/font/google';
+import "./globals.css"
+
+export const metadata = {
+  title: "mi tienda con NextJs - Homepage",
+  description: 'Esta es la página principal de mi tienda.',
+  keywords: "tienda, online, ecommerce"
+}
 
 const roboto = Roboto({
   weight: ["300","400","500","700"],
