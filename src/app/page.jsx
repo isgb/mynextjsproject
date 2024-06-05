@@ -1,6 +1,6 @@
 // "use client"
 
-import Users from "@/components/Users"
+import Users from "@/src/components/Users"
 
 export const metada = {
     title: "Mi pagina especial Home"
