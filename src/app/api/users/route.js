@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 
+console.log(process.env.TOKEN);
+
 export async function GET(){
     // return new Response("hello world");
    const res = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -9,8 +11,11 @@ export async function GET(){
     });
 }
 
-export function POST(){
+export async function POST(request){
     // return new Response("hello world");
+    // const data = await request.json();
+    const {nombre, apellido} = await request.json();
+    console.log(nombre,apellido);
     return NextResponse.json({
         message: "CREANDO DATOS"
     });
